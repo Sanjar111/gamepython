@@ -109,6 +109,8 @@ def check_collection(snake):
   x, y = snake.coordinates[0]
 
   if x < 0 or x >= GAME_WIDTH:
+     return True
+  elif x < 0 or x >= GAME_HEIGHT:
      print("GAME OVER")
      return True
 
